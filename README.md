@@ -5,10 +5,10 @@
 对audio标签的简单封装类，不依赖任何类库，创建一个audio实例：
 
 ```
-		var	player = new audioObject({
-			id:"radio_player",//要替换的html元素 必需参数
-			autoplay:true
-		}); 
+var	player = new audioObject({
+	id:"radio_player",//要替换的html元素 必需参数
+	autoplay:true
+}); 
 ```
 
 * 初始化的时候可以传入的参数有：
@@ -18,9 +18,8 @@
 	* className		
 	
 创建后一个radio标签将替换id 为 “radio_player” 的DOM元素。
-然后你就可以使用player对象控制播放了,如：
+然后你就可以使用player对象控制播放了
 
-###支持的方法
 
 ```
 player.src('http://xx.com/ss.mp3') //设置播放的文件
@@ -34,8 +33,9 @@ var fileUrl = player.src() //返回当前播放的文件地址
 player.addEvent('timeupdate',function(){
 	console.log(player.getPercent());
 });
-
 ```
+
+###支持的方法
 
 * 支持方法：
 	* muted([callback]) //静音
