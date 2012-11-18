@@ -83,8 +83,8 @@ $extend(audio.prototype,{
 		this.obj.muted = false;
 		this.fixNoneFunc(arguments);
 	},
-	toggleMuted:function(){
-		this.obj.muted ? this.unmuted():this.muted();
+	toggleMuted:function(func){
+		this.obj.muted ? this.unmuted(func):this.muted(func);
 	},
 	/**
 	* @Usage 执行回调函数 
